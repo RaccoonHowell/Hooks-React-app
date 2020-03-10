@@ -1,8 +1,12 @@
 import React from "react";
-import Clicked from "./Clicked"
+import Clicked from "./Clicked";
+import Square from "./Square";
 
 const App = () => (
-	<Clicked />
+	<>
+		<Clicked />
+		<Square color="blue"/>
+	</>
 );
 
 export default App;
