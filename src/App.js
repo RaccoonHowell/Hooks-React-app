@@ -7,6 +7,8 @@ import StepCounter from "./StepCounter";
 import CatchMeIfYouCan from "./CatchMeIfYouCan";
 import RollCall from "./RollCall";
 import Colours from "./Colours";
+import Die from "./Die";
+import "./App.css";
 
 const App = () => (
 	<>
@@ -18,6 +20,7 @@ const App = () => (
 		<CatchMeIfYouCan jump={ 100 } />
 		<RollCall names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 		<Colours colours={["#C14412", "#EBB31A", "#8F5318", "#009EAD", "#395967"]} />
+		<Die sides={ 6 } />
 	</>
 );
 

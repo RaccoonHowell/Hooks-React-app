@@ -6,12 +6,17 @@ const Square = ({ color }) => {
     const updateClicked = () => setClicked(!clicked);
 
     const divStyle = {
-        backgroundColor: clicked ? color : "green",
+        backgroundColor: clicked ? color : "lightgreen",
         height: 200,
         width: 200,
     };
     
-    return <div onClick={ updateClicked } style={ divStyle } />
+    return (
+        <div class="wrapper">
+            <h3>Challenge 2 <span>(Square)</span></h3>
+            <div onClick={ updateClicked } style={ divStyle } />
+        </div>
+    )
   }
 
   export default Square;

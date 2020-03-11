@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Colours = ({ colours }) => {
     const [index, setIndex] = useState(0);
 
-    const updateIndex= () => setIndex(index < colours.length - 1? index + 1 : 0);
+    const updateIndex = () => setIndex(index < colours.length - 1? index + 1 : 0);
 
     const divStyle = {
         backgroundColor: colours[index],
@@ -11,7 +11,12 @@ const Colours = ({ colours }) => {
         width: 200,
     };
 
-    return <div onClick={ updateIndex } style={ divStyle } />             
+    return (
+        <div class="wrapper">
+            <h3>Tricksy 1 <span>(Colours)</span></h3>
+            <div onClick={ updateIndex } style={ divStyle } />  
+        </div> 
+    )          
 }
 
 export default Colours;

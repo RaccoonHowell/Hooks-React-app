@@ -6,10 +6,11 @@ const ToggleText = ({ initial, alternate }) => {
     const updateClicked = () => setClicked(!clicked);
     
     return (
-        <>
-            <button className="btn btn-primary" onClick={ updateClicked }>Toggle</button>
+        <div class="wrapper">
+            <h3>Challenge 3 <span>(ToggleText)</span></h3>
+            <button onClick={ updateClicked }>Toggle</button>
             <p>{ clicked ?  alternate : initial }</p>
-        </>
+        </div>
     )
 }
 

@@ -3,16 +3,17 @@ import React, { useState } from "react";
 const StepCounter = ({ max, step }) => {
     const [counter, setCounter] = useState(0);
 
-    const updateCounterDown= () => setCounter(counter === 0 ? 0 : counter - step);
+    const updateCounterDown = () => setCounter(counter === 0 ? 0 : counter - step);
 
-    const updateCounterUp= () => setCounter(counter === max ? max : counter + step);
+    const updateCounterUp = () => setCounter(counter === max ? max : counter + step);
     
     return (
-        <>
-            <button className="btn btn-primary" onClick={ updateCounterDown }>-</button>
-            <button className="btn btn-primary" onClick={ updateCounterUp }>+</button>
+        <div class="wrapper">
+            <h3>Challenge 5 <span>(StepCounter)</span></h3>
+            <button onClick={ updateCounterDown }>-</button>
+            <button onClick={ updateCounterUp }>+</button>
             <p>{ counter }</p>      
-        </>
+        </div>
     )
 }
 

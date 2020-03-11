@@ -6,17 +6,15 @@ const CatchMeIfYouCan = ({ jump }) => {
     const updateClicked = () => setClicked(clicked + 1);
 
     const style = {
-        position: 'absolute',
+        position: 'relative',
         top: clicked * jump
     }
 
-    return ( 
-        <button 
-            className="btn btn-primary" 
-            style={ style } onClick={ updateClicked}
-        >
-            Jump
-        </button>
+    return (
+        <div class="wrapper">
+            <h3>Challenge 6 <span>(CatchMeIfYouCan)</span></h3>
+            <button style={ style } onClick={ updateClicked}>Jump</button>
+        </div>
     )
 }
 

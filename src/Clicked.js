@@ -5,8 +5,13 @@ const Clicked = () => {
  
     const updateClicked = () => setClicked(true);
     
-    return <p onClick={ updateClicked }>{ clicked ? "Clicked" : "Not clicked" }</p>;
-  }
+    return (
+        <div class="wrapper">
+            <h3>Challenge 1 <span>(Clicked)</span></h3>
+            <p onClick={ updateClicked }>{ clicked ? "Clicked" : "Not clicked" }</p>
+        </div>
+    )
+}
 
   export default Clicked;
 
