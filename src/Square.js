@@ -11,7 +11,7 @@ const Square = ({ color }) => {
         width: 200,
     };
     
-    return <div onClick={ updateClicked } style={ divStyle } />;
+    return <div onClick={ updateClicked } style={ divStyle } />
   }
 
   export default Square;
