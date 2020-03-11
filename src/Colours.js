@@ -11,9 +11,7 @@ const Colours = ({ colours }) => {
         width: 200,
     };
 
-    return (
-            <div onClick={ updateIndex } style={ divStyle } />             
-    )
+    return <div onClick={ updateIndex } style={ divStyle } />             
 }
 
 export default Colours;
