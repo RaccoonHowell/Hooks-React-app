@@ -15,3 +15,5 @@ const Square = ({ color }) => {
   }
 
   export default Square;
+
+  // Update your <Square colour="hotpink"> component so that the background starts green, but when it is clicked it changes to the passed in colour. It should alternate every time you click.
